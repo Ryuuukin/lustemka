@@ -1,0 +1,49 @@
+body {
+    background-color: #ffe6f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.greeting h1 {
+    color: #ff4d94;
+    margin-bottom: 20px;
+}
+
+.jumping-photo {
+    width: 200px;
+    animation: jump 1s infinite;
+}
+
+.present-box {
+    font-size: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.gift {
+    margin-top: 20px;
+    animation: dance 1s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes dance {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-20deg); }
+    75% { transform: rotate(20deg); }
+}
